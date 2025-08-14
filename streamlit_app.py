@@ -7,7 +7,7 @@ import io
 
 st.set_page_config(page_title="Ploppo Pattern Explorer", layout="wide")
 st.title("🎱 Ploppo Pattern Explorer")
-st.write("Upload your Saturday Lotto draw results and explore number patterns!")
+st.write("Upload your dataset!")
 
 # File upload
 uploaded_file = st.file_uploader("Upload Lotto CSV or Excel file", type=["csv", "xlsx"])
@@ -101,4 +101,5 @@ if uploaded_file:
             st.line_chart(df['Avg_Gap'])
 
             st.success("Analysis complete. Scroll through the results above!")
+
 
