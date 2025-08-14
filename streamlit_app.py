@@ -5,8 +5,8 @@ import seaborn as sns
 from collections import Counter
 import io
 
-st.set_page_config(page_title="Lotto Pattern Explorer", layout="wide")
-st.title("🎱 Lotto Pattern Explorer")
+st.set_page_config(page_title="Ploppo Pattern Explorer", layout="wide")
+st.title("🎱 Ploppo Pattern Explorer")
 st.write("Upload your Saturday Lotto draw results and explore number patterns!")
 
 # File upload
@@ -101,3 +101,4 @@ if uploaded_file:
             st.line_chart(df['Avg_Gap'])
 
             st.success("Analysis complete. Scroll through the results above!")
+
